@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/candlestick.png"
+      type="image/x-icon"
+    />
+    <title>StockAvg</title>
+  </head>
+  <body>
+    <h1>Share Calculator</h1>
+    <a class="fork" target="_blank" href="https://github.com/amaan14999/GPAtool"
+      ><i class="fa-solid fa-code-fork"></i> Fork me!</a
+    >
+    <a
+      class="fork-icon"
+      target="_blank"
+      href="https://github.com/amaan14999/GPAtool"
+      ><i class="fa-solid fa-code-fork"></i
+    ></a>
+    <form id="shareCalculator">
+      <label for="prevShares">Number of Previously Bought Shares:</label>
+      <input type="number" id="prevShares" min="0" required />
+
+      <label for="prevAvgPrice"
+        >Average Price of Previously Bought Shares:</label
+      >
+      <input type="number" id="prevAvgPrice" min="0" step="0.01" required />
+
+      <label for="currentPrice">Current Market Price of the Share:</label>
+      <input type="number" id="currentPrice" min="0" step="0.01" required />
+
+      <label for="desiredAvgPrice">Desired Average Price of the Share:</label>
+      <input type="number" id="desiredAvgPrice" min="0" step="0.01" required />
+
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Calculate" />
+    </form>
+
+    <p id="result" class="result"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -50,4 +50,4 @@ Contributions to StockAvg are welcome! If you find any issues or have suggestion
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://github.com/amaan14999/StockAvg/blob/main/LICENSE).
